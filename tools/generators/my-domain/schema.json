@@ -1,0 +1,17 @@
+{
+  "$schema": "http://json-schema.org/schema",
+  "cli": "nx",
+  "$id": "my-domain",
+  "type": "object",
+  "properties": {
+    "domainName": {
+      "type": "string",
+      "description": "Domain name",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      }
+    }
+  },
+  "required": ["domainName"]
+}
